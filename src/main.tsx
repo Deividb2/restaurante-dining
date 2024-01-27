@@ -7,18 +7,36 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 // pages
+import App from './App.tsx'
 import Error from './assets/pages/Error/Error.tsx'
 import Home from './assets/pages/Home/Home.tsx'
+import Sobre from './assets/pages/Sobre/Sobre.tsx'
+import Contato from './assets/pages/Contato/Contato.tsx'
+import Cardapio from './assets/pages/Cardapio/Cardapio.tsx'
 
 // rotas
 const rotas = createBrowserRouter([
   {
     errorElement: <Error />,
+    path: '/',
+    element: <App />,
     children: [
       {
         path: '/',
         element: <Home />
-      }
+      },
+      {
+        path: '/sobre',
+        element: <Sobre />
+      },
+      {
+        path: '/contato',
+        element: <Contato />
+      },
+      {
+        path: '/cardapio',
+        element: <Cardapio />
+      },
     ]
   }
 ])

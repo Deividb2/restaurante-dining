@@ -5,7 +5,7 @@ import ImgPlates from '../../../public/imgs/imgPlates.jpg'
 export default function Plates() {
     return (
         <>
-            <section className="min-h-[390vh] flex flex-col justify-end bg-contain bg-no-repeat bg-[#111111] 
+            <section className="min-h-[390vh] flex flex-col justify-end bg-contain bg-no-repeat bg-[#111111] py-10
             md:min-h-[170vh]"
             style={{backgroundImage: `url(${ImgPlates})`}}>
                 <div className="flex flex-wrap justify-center items-center gap-14 

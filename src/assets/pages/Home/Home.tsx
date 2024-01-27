@@ -1,15 +1,17 @@
-import Header from "../../components/Header"
 import Banner from "../../components/Banner"
-import Breakfast from "../../components/Breakfast"
+// import Breakfast from "../../components/Breakfast"
 import Plates from "../../components/Plates"
+import FastFood from "../../components/FastFood"
+import BurguerMenu from "../../components/BurguerMenu"
 
 export default function Home() {
     return (
         <>  
-            <Header />
             <Banner />
-            <Breakfast />
+            {/* <Breakfast /> */}
             <Plates />
+            <FastFood />
+            <BurguerMenu />
         </>
     )
 }

@@ -34,7 +34,9 @@ export default function Header() {
             <header className="flex flex-col mb-[10vh]">
                 <div className={`flex justify-between items-center h-[10vh] px-4 fixed left-0 right-0 z-10 ${bgColor} 
                     transition-[background-color] delay-100 ease-in md:px-6`}>
-                    <h2 className="font-semibold uppercase text-xl">Logo</h2>
+                    <h2 className="font-semibold uppercase text-xl">
+                        <Link to='/'>Logo</Link>
+                    </h2>
                     <div onClick={() => hendleMenu()}>
                         {
                             menu ? <IoMdClose className="text-2xl md:text-4xl" /> : <IoMdMenu className="text-2xl md:text-4xl" />
@@ -52,17 +54,17 @@ export default function Header() {
 
                         <li className="flex items-center gap-3">
                             <IoMdPeople className="text-lg" />
-                            <Link to="/" className="hover:underline">Sobre</Link>
+                            <Link to="/sobre" className="hover:underline">Sobre</Link>
                         </li>
 
                         <li className="flex items-center gap-3">
                             <FaPhoneAlt className="text-base" />
-                            <Link to="/" className="hover:underline">Contato</Link>
+                            <Link to="/contato" className="hover:underline">Contato</Link>
                         </li>
 
                         <li className="flex items-center gap-3">
                             <MdRestaurantMenu className="text-lg" />
-                            <Link to="/" className="hover:underline">Cardápio</Link>
+                            <Link to="/cardapio" className="hover:underline">Cardápio</Link>
                         </li>
 
                         <li className="flex items-center gap-3">
