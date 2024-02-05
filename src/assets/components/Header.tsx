@@ -2,16 +2,21 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 // ícones 
-import { IoMdMenu, IoMdClose  } from "react-icons/io";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { IoHomeSharp } from "react-icons/io5";
 import { IoMdPeople } from "react-icons/io"
-import { MdRestaurantMenu, MdLocalOffer  } from "react-icons/md";
+import { MdRestaurantMenu, MdLocalOffer } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Header() {
     const [menu, setMenu] = useState(false)
     const hendleMenu = () => {
         return setMenu(!menu)
+    }
+
+    // para fechar menu quando algum link for clicado
+    const fecharMenu = () => {
+        setMenu(false)
     }
 
     // para mudar a cor do header quando rolar o scroll
@@ -45,31 +50,31 @@ export default function Header() {
                 </div>
 
                 <nav className={`bg-black border-b-4 border-red-600 fixed top-[10vh] z-10 overflow-hidden whitespace-nowrap 
-                transition-all delay-75 ease h-full ${menu ? 'w-[100vw] md:w-[40vw] lg:w-[30vw]': 'w-0'}`}>
+                transition-all delay-75 ease h-full ${menu ? 'w-[100vw] md:w-[40vw] lg:w-[30vw]' : 'w-0'}`}>
                     <ul className="flex flex-col gap-6 py-7 px-6 text-white">
                         <li className="flex items-center gap-3">
                             <IoHomeSharp className="text-lg" />
-                            <Link to="/" className="hover:underline">Home</Link>
+                            <Link to="/" className="hover:underline" onClick={fecharMenu}>Home</Link>
                         </li>
 
                         <li className="flex items-center gap-3">
                             <IoMdPeople className="text-lg" />
-                            <Link to="/sobre" className="hover:underline">Sobre</Link>
+                            <Link to="/sobre" className="hover:underline" onClick={fecharMenu}>Sobre</Link>
                         </li>
 
                         <li className="flex items-center gap-3">
                             <FaPhoneAlt className="text-base" />
-                            <Link to="/contato" className="hover:underline">Contato</Link>
+                            <Link to="/contato" className="hover:underline" onClick={fecharMenu}>Contato</Link>
                         </li>
 
                         <li className="flex items-center gap-3">
                             <MdRestaurantMenu className="text-lg" />
-                            <Link to="/cardapio" className="hover:underline">Cardápio</Link>
+                            <Link to="/cardapio" className="hover:underline" onClick={fecharMenu}>Cardápio</Link>
                         </li>
 
                         <li className="flex items-center gap-3">
                             <MdLocalOffer className="text-base" />
-                            <Link to="/" className="hover:underline">Promoção do dia</Link>
+                            <Link to="/" className="hover:underline" onClick={fecharMenu}>Promoção do dia</Link>
                         </li>
                     </ul>
                 </nav>

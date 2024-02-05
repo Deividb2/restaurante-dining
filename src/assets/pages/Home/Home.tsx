@@ -4,7 +4,6 @@ import Plates from "../../components/Plates";
 import FastFood from "../../components/FastFood";
 import BurguerMenu from "../../components/BurguerMenu";
 import CarouselCards from "../../components/CarouselCards";
-import Footer from "../../components/Footer";
 
 export default function Home() {
     return (
@@ -15,7 +14,6 @@ export default function Home() {
             <FastFood />
             <BurguerMenu />
             <CarouselCards />
-            <Footer />
         </>
     );
 }
