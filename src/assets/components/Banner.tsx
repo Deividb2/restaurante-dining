@@ -21,7 +21,7 @@ export default function Banner() {
             maiores quos perspiciatis.
           </p>
           <Link
-            to="/"
+            to="/cardapio"
             className="py-3 px-8 rounded-full bg-red-600 text-white font-semibold self-start
                         md:hover:pr-12 transition-[padding-right] delay-75 ease"
           >

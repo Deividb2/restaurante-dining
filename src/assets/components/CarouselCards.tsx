@@ -43,9 +43,8 @@ export default function CarouselCards() {
                 </p>
 
                 <Link
-                  to="/"
-                  className="py-3 px-8 rounded-full bg-red-600 text-white font-semibold
-                    md:hover:pr-12 transition-[padding-right] delay-75 ease"
+                  to="/cardapio"
+                  className="py-3 px-8 rounded-full bg-red-600 text-white font-semibold"
                 >
                   VER MENU
                 </Link>
@@ -64,9 +63,8 @@ export default function CarouselCards() {
                 </p>
 
                 <Link
-                  to="/"
-                  className="py-3 px-8 rounded-full bg-red-600 text-white font-semibold
-                    md:hover:pr-12 transition-[padding-right] delay-75 ease"
+                  to="/cardapio"
+                  className="py-3 px-8 rounded-full bg-red-600 text-white font-semibold"
                 >
                   VER MENU
                 </Link>

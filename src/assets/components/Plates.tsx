@@ -22,7 +22,7 @@ export default function Plates() {
                                 
                                 <p className="italic text-base text-[#b3b3b3] lg:text-lg">{elementos.text}</p>
                             
-                                <Link to='/' className='border-b-4 self-start flex items-center gap-1'><BiBookOpen /> SABER MAIS</Link>
+                                <Link to='/cardapio' className='border-b-4 self-start flex items-center gap-1'><BiBookOpen /> SABER MAIS</Link>
                             </div>
                         )
                     }
