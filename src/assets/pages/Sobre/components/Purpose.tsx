@@ -5,7 +5,7 @@ export default function Purpose() {
         <>
             <section className="flex flex-wrap justify-center gap-10 min-h-screen p-5 lg:items-center">
                 {datasPurpose.map((el, index) =>
-                    <div key={index} className="flex flex-col items-center gap-5 max-w-[25rem] max-h-[60vh] px-6 py-8 text-center  
+                    <div key={index} className="flex flex-col items-center gap-5 max-w-[25rem] min-h-[60vh] px-6 py-8 text-center  
                         rounded-lg border-[4px] border-[#66666638] md:max-w-[35vw] md:h-[60vh] lg:max-w-[25vw]">
                         <Chat className="text-3xl text-[#ff0000]" />
                         <h3 className="text-2xl font-bold">{el.title}</h3>

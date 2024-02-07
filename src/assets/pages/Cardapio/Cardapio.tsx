@@ -8,6 +8,8 @@ export default function Cardapio() {
             <HeaderPages title="Cardápio" subtitle="Veja o nosso menu e venha saborear a aqui" fundo={imgCardapio}>
                 <MdRestaurantMenu className="text-4xl md:text-6xl" />
             </HeaderPages>
+
+            <div className="h-screen"></div>
         </>
     )
 }
