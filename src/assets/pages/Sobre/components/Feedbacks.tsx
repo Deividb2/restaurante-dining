@@ -27,12 +27,12 @@ export default function Feedbacks() {
 
     return (
         <>
-            <section className='flex flex-col items-center justify-center gap-5 h-[60vh] py-10 text-center bg-[#ccc]'>
+            <section className='flex flex-col items-center justify-center gap-5 h-[70vh] py-10 text-center bg-[#ccc] md:h-[65vh]'>
                 <div className='flex flex-col gap-3'>
                     <h4 className='font-bold text-3xl'>Depoimentos</h4>
-                    <div className='flex justify-between items-center w-screen px-4'>
+                    <div className='flex justify-between items-center w-full px-4 md:justify-center'>
                         <hr className='w-[20%] h-[2px] bg-white' />
-                        <h4 className='text-sm'>O que pensam sobre nós</h4>
+                        <h4 className='text-sm md:text-base md:mx-4'>O que pensam sobre nós</h4>
                         <hr className='w-[20%] h-[2px] bg-white' />
                     </div>
                 </div>
@@ -45,14 +45,14 @@ export default function Feedbacks() {
                         delay: 2500,
                         disableOnInteraction: false
                     }}
-                    className='w-screen h-[60vh]'
+                    className='w-full h-[60vh]'
                 >
 
                     {
                         dados.map((el, index) =>
-                            <SwiperSlide key={index} className=' p-5'>
+                            <SwiperSlide key={index} className='p-5'>
                                 <div>
-                                    <h3>{el.comentario}</h3>
+                                    <h3 className="lg:text-xl">{el.comentario}</h3>
                                     <h4 className='font-bold text-red-600 my-2'>{el.nome}</h4>
                                     {
                                         avaliacoes(el)
