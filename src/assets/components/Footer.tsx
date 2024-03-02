@@ -1,6 +1,10 @@
+import gradeHorarios from '../../dados/horarios.json'
 import { FaFacebook, FaInstagram, FaRegCopyright } from "react-icons/fa";
 
 export default function Footer() {
+
+  const horarios = gradeHorarios.data
+
   return (
     <>
       <footer className="flex flex-col bg-black text-[#fff]">
@@ -44,23 +48,19 @@ export default function Footer() {
 
             <ul className="flex justify-between w-screen text-left text-sm mt-5 px-5 md:max-w-[35vw] lg:max-w-[20vw] lg:text-xs">
               <div>
-                <li className="mb-3">SEGUNDA</li>
-                <li className="mb-3">TERÇA</li>
-                <li className="mb-3">QUARTA</li>
-                <li className="mb-3">QUINTA</li>
-                <li className="mb-3">SEXTA</li>
-                <li className="mb-3">SÁBADO</li>
-                <li className="mb-3">DOMINGO</li>
+                {
+                  horarios.map((el, index) =>
+                    <li className="mb-3 uppercase" key={index}>{el.dia}</li>
+                  )
+                }
               </div>
 
               <div>
-                <li className="mb-3">11:30h às 23:45h</li>
-                <li className="mb-3">11:30h às 23:45h</li>
-                <li className="mb-3">11:30h às 23:45h</li>
-                <li className="mb-3">11:30h às 23:45h</li>
-                <li className="mb-3">11:30h às 23:45h</li>
-                <li className="mb-3">11:30h às 01:00h</li>
-                <li className="mb-3">11:30h às 23:45h</li>
+                {
+                  horarios.map((el, index) => 
+                    <li className="mb-3" key={index}>{el.horario}</li>
+                  )
+                }
               </div>
             </ul>
           </div>

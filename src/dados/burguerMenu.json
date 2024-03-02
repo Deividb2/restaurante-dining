@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "title": "Double Burger",
+            "price": "R$8,50",
+            "imgSrc": "../../public/imgs/BM1.jpg"
+        },
+        {
+            "title": "Farm House",
+            "price": "R$7,50",
+            "imgSrc": "../../public/imgs/BM2.jpg"
+        },
+        {
+            "title": "Bacon Burger",
+            "price": "R$8,00",
+            "imgSrc": "../../public/imgs/BM3.jpg"
+        },
+        {
+            "title": "Oferta especial",
+            "price": "R$15,00",
+            "imgSrc": "../../public/imgs/BM4.jpg"
+        },
+        {
+            "title": "Black Burger",
+            "price": "R$11,00",
+            "imgSrc": "../../public/imgs/BM5.jpg"
+        },
+        {
+            "title": "King Burger",
+            "price": "R$11,00",
+            "imgSrc": "../../public/imgs/BM6.jpg"
+        }
+    ] 
+}

@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom'
 import { BiBookOpen } from 'react-icons/bi'
 import ImgPlates from '../../../public/imgs/imgPlates.jpg'
+import platesDatas from '../../dados/plates.json'
 
 export default function Plates() {
+
+    const plates = platesDatas.data
+
     return (
         <>
             <section className="min-h-[390vh] flex flex-col justify-end bg-contain bg-no-repeat bg-[#111111] py-10
@@ -11,7 +15,7 @@ export default function Plates() {
                 <div className="flex flex-wrap justify-center items-center gap-14 
                     md:gap-8 md:grid md:grid-cols-3 md:place-items-center md:px-4">
                     {
-                        pratos.map((elementos, index) => 
+                        plates.map((elementos, index) => 
                             <div key={++index} className="flex flex-col gap-4 max-w-[16rem] px-4 md:px-6 py-10 text-white bg-[#333333] 
                                 md:max-w-[23rem]">
                                 <div className="flex items-center gap-2 lg:gap-4">
@@ -31,30 +35,3 @@ export default function Plates() {
         </>
     )
 }
-
-const pratos = [
-    {
-        title: 'Comida fresca',
-        text: 'Texto de amostra. Clique para selecionar a caixa de texto. Clique novamente ou clique duas vezes para começar a editar o texto.'
-    },
-    {
-        title: 'Jantares',
-        text: 'Texto de amostra. Clique para selecionar a caixa de texto. Clique novamente ou clique duas vezes para começar a editar o texto.'
-    },
-    {
-        title: 'Menu Clássico',
-        text: 'Texto de amostra. Clique para selecionar a caixa de texto. Clique novamente ou clique duas vezes para começar a editar o texto.'
-    },
-    {
-        title: 'Especial do Chef',
-        text: 'Texto de amostra. Clique para selecionar a caixa de texto. Clique novamente ou clique duas vezes para começar a editar o texto.'
-    },
-    {
-        title: 'Massas e Pizzas',
-        text: 'Texto de amostra. Clique para selecionar a caixa de texto. Clique novamente ou clique duas vezes para começar a editar o texto.'
-    },
-    {
-        title: 'Pratos Veganos',
-        text: 'Texto de amostra. Clique para selecionar a caixa de texto. Clique novamente ou clique duas vezes para começar a editar o texto.'
-    },
-]

@@ -1,3 +1,5 @@
+import FeedbacksClientes from '../../../../dados/feedbacks.json'
+
 import { IoMdStar as Estrela } from "react-icons/io";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,6 +11,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 export default function Feedbacks() {
+
+    const clientesFeed = FeedbacksClientes.data
 
     const avaliacoes = (elemento: any) => {
         const estrelas = []
@@ -49,7 +53,7 @@ export default function Feedbacks() {
                 >
 
                     {
-                        dados.map((el, index) =>
+                        clientesFeed.map((el, index) =>
                             <SwiperSlide key={index} className='p-5'>
                                 <div>
                                     <h3 className="lg:text-xl">{el.comentario}</h3>
@@ -67,56 +71,3 @@ export default function Feedbacks() {
         </>
     )
 }
-
-const dados = [
-    {
-        nome: 'Juliana Torres',
-        comentario: 'Uma experiência gastronômica encantadora com uma vista deslumbrante!',
-        estrelas: 5
-    },
-    {
-        nome: 'Pedro Silva',
-        comentario: 'Comida deliciosa em um ambiente sereno à beira do lago.',
-        estrelas: 4
-    },
-    {
-        nome: 'Carolina Santos',
-        comentario: 'Um refúgio perfeito para os amantes da natureza e da boa comida.',
-        estrelas: 5
-    },
-    {
-        nome: 'Rafael Oliveira',
-        comentario: 'O cenário ideal para um jantar romântico com pratos incríveis.',
-        estrelas: 3
-    },
-    {
-        nome: 'Ana Costa',
-        comentario: 'Um lugar onde a tranquilidade se encontra com a excelência culinária.',
-        estrelas: 4
-    },
-    {
-        nome: 'Lucas Pereira',
-        comentario: 'Inesquecíveis sabores à beira das águas calmas.',
-        estrelas: 5
-    },
-    {
-        nome: 'Isabela Souza',
-        comentario: 'Um verdadeiro paraíso gastronômico com vistas panorâmicas.',
-        estrelas: 5
-    },
-    {
-        nome: 'Gabriel Almeida',
-        comentario: 'O restaurante perfeito para uma refeição relaxante com a família.',
-        estrelas: 4
-    },
-    {
-        nome: 'Mariana Ferreira',
-        comentario: 'Comer aqui é como ter um banquete para os sentidos em meio à natureza.',
-        estrelas: 5
-    },
-    {
-        nome: 'Thiago Rodrigues',
-        comentario: 'Uma experiência que alimenta não apenas o corpo, mas também a alma.',
-        estrelas: 5
-    },
-]

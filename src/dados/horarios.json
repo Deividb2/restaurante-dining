@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "dia": "Segunda",
+            "horario": "11:30h às 23:45h"
+        },
+        {
+            "dia": "Terça",
+            "horario": "11:30h às 23:45h"
+        },
+        {
+            "dia": "Quarta",
+            "horario": "11:30h às 23:45h"
+        },
+        {
+            "dia": "Quinta",
+            "horario": "11:30h às 23:45h"
+        },
+        {
+            "dia": "Sexta",
+            "horario": "11:30h às 23:45h"
+        },
+        {
+            "dia": "Sábado",
+            "horario": "11:30h às 01:00h"
+        },
+        {
+            "dia": "Domingo",
+            "horario": "11:30h às 23:45h"
+        }
+    ]
+}
