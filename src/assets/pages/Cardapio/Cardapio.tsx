@@ -9,7 +9,9 @@ export default function Cardapio() {
                 <MdRestaurantMenu className="text-4xl md:text-6xl" />
             </HeaderPages>
 
-            <div className="h-screen"></div>
+            <div className="h-screen grid place-items-center">
+                <h2 className="text-3xl font-bold">Deivid Lindão</h2>
+            </div>
         </>
     )
 }
